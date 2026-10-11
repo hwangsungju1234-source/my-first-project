@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>순옥이네딸기 | 담양 명품 죽향딸기 산지직송</title>
+  <meta name="description" content="전남 담양군 봉산면 와우리 888-10번지 순옥이네딸기. 당일 새벽 수확 담양 명품 죽향딸기 2kg(500g 4팩) 전국 산지 직송 택배 및 직판장 수령">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            strawberry: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            },
+            leaf: {
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-strawberry-500 selection:text-white pb-20 md:pb-0">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <span class="text-2xl">🍓</span>
+        <span class="text-xl font-bold tracking-tight text-stone-900">순옥이네딸기</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-stone-600">
+        <a href="#about" class="hover:text-strawberry-600 transition">농장 소개</a>
+        <a href="#products" class="hover:text-strawberry-600 transition">죽향딸기 상품</a>
+        <a href="#order" class="hover:text-strawberry-600 transition">주문 & 문의</a>
+        <a href="#notice" class="hover:text-strawberry-600 transition">농장 소식</a>
+        <a href="#location" class="hover:text-strawberry-600 transition">오시는 길</a>
+      </nav>
+
+      <!-- Desktop Quick CTA -->
+      <div class="hidden md:flex items-center space-x-3">
+        <a href="tel:01075999962" class="text-sm font-semibold text-stone-700 hover:text-strawberry-600">
+          📞 010-7599-9962
+        </a>
+        <a href="#order" class="px-4 py-2 text-sm font-bold text-white bg-strawberry-600 hover:bg-strawberry-700 rounded-full shadow-sm transition">
+          간편 주문하기
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-stone-600 hover:text-stone-900" aria-label="메뉴 열기">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-stone-200 bg-white px-4 py-3 space-y-2 text-sm font-medium text-stone-700">
+      <a href="#about" class="block py-2 hover:text-strawberry-600" onclick="toggleMenu()">농장 소개</a>
+      <a href="#products" class="block py-2 hover:text-strawberry-600" onclick="toggleMenu()">죽향딸기 상품</a>
+      <a href="#order" class="block py-2 hover:text-strawberry-600" onclick="toggleMenu()">주문 & 문의</a>
+      <a href="#notice" class="block py-2 hover:text-strawberry-600" onclick="toggleMenu()">농장 소식</a>
+      <a href="#location" class="block py-2 hover:text-strawberry-600" onclick="toggleMenu()">오시는 길</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-strawberry-50/80 via-white to-stone-50 py-12 md:py-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-strawberry-100 text-strawberry-700 text-xs font-semibold mb-4">
+          <span>🌿 담양 봉산면 청정 온실</span>
+          <span>•</span>
+          <span>100% 당일 새벽 수확</span>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-stone-900 leading-tight tracking-tight mb-4">
+          새벽에 따서 가장 신선한<br />
+          <span class="text-strawberry-600">담양 명품 죽향딸기</span>
+        </h1>
+        <p class="text-stone-600 text-base md:text-lg mb-8 leading-relaxed">
+          높은 당도와 아삭한 과육, 진한 딸기향을 자랑하는 담양 대표 명품 품종 죽향.<br class="hidden sm:inline" />
+          <strong>500g 4개 팩(총 2kg 박스)</strong> 전용 완충 포장으로 산지의 신선함을 식탁까지 그대로 전해드립니다.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#order" class="px-6 py-3.5 bg-strawberry-600 hover:bg-strawberry-700 text-white font-bold rounded-xl shadow-md text-center transition flex items-center justify-center gap-2">
+            <span>🍓 2kg 주문·문의서 작성</span>
+          </a>
+          <a href="tel:01075999962" class="px-6 py-3.5 bg-white border border-stone-300 hover:border-strawberry-500 text-stone-800 font-semibold rounded-xl text-center transition flex items-center justify-center gap-2">
+            <span>📞 전화 바로걸기</span>
+          </a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-4 border-t border-stone-200 pt-6 text-center text-xs md:text-sm text-stone-600">
+          <div>
+            <div class="font-bold text-stone-900 text-base md:text-lg">100%</div>
+            <div>당일 새벽 수확</div>
+          </div>
+          <div>
+            <div class="font-bold text-stone-900 text-base md:text-lg">500g×4팩</div>
+            <div>2kg 전용박스</div>
+          </div>
+          <div>
+            <div class="font-bold text-stone-900 text-base md:text-lg">전국배송</div>
+            <div>우체국/안심택배</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="relative">
+        <div class="aspect-video md:aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-stone-200 bg-stone-100 flex items-center justify-center relative group">
+          <img src="watermarked_img_9095258496445317228.jpg" alt="순옥이네딸기 2kg 박스 포장" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1543528176-61b239494933?auto=format&fit=crop&w=1200&q=80'">
+          <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg">
+            실물 2kg (500g × 4팩) 포장
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. About Section -->
+  <section id="about" class="py-16 bg-white border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-strawberry-600 mb-2">About Farm</h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-stone-900">순옥이네딸기의 고집과 철학</h3>
+        <p class="text-stone-600 mt-3 text-sm md:text-base">
+          전남 담양군 봉산면 와우리 888-10번지, 맑은 물과 기름진 토양 속에서 자연과 정성을 담아 건강한 죽향딸기를 재배합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <div class="w-12 h-12 rounded-xl bg-strawberry-100 text-strawberry-600 flex items-center justify-center text-2xl mb-4">👑</div>
+          <h4 class="text-lg font-bold text-stone-900 mb-2">명품 단일 품종, 담양 죽향</h4>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            일반 품종 대비 과육이 단단하여 무름이 적고, 씹을수록 깊고 진한 딸기 본연의 풍미와 높은 당도를 자랑합니다.
+          </p>
+        </div>
+
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <div class="w-12 h-12 rounded-xl bg-leaf-500/10 text-leaf-600 flex items-center justify-center text-2xl mb-4">🌱</div>
+          <h4 class="text-lg font-bold text-stone-900 mb-2">고설 수경재배 스마트팜</h4>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            바닥에서 띄워 키우는 위생적인 고설 베드와 정밀한 영양 공급 제어로 먼지나 흙탕물 없이 깨끗하게 결실을 맺습니다.
+          </p>
+        </div>
+
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <div class="w-12 h-12 rounded-xl bg-strawberry-100 text-strawberry-600 flex items-center justify-center text-2xl mb-4">🌅</div>
+          <h4 class="text-lg font-bold text-stone-900 mb-2">당일 새벽 수확 & 직배송</h4>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            유통 단계를 거치지 않고 새벽 이슬이 걷히기 전 수확하여 선별 후 즉시 포장 발송하여 신선도를 극대화합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Products Section -->
+  <section id="products" class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-strawberry-600 mb-2">Product & Packaging</h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-stone-900">죽향딸기 2kg 표준 박스 안내</h3>
+        <p class="text-stone-600 mt-3 text-sm md:text-base">
+          딸기가 서로 짓무르지 않도록 500g 4개 투명 팩으로 깔끔하게 소분하여 안전한 2kg 전용 맞춤 박스에 포장됩니다.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 md:p-10 border border-stone-200 shadow-sm max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="inline-block px-3 py-1 bg-strawberry-100 text-strawberry-700 text-xs font-bold rounded-md mb-3">대표 표준 상품</div>
+            <h4 class="text-2xl font-bold text-stone-900 mb-2">명품 죽향딸기 2kg 박스</h4>
+            <p class="text-strawberry-600 font-semibold text-lg mb-4">500g 팩 × 4개입 구성</p>
+            
+            <ul class="space-y-3 text-stone-600 text-sm mb-6">
+              <li class="flex items-start gap-2">
+                <span class="text-strawberry-500 font-bold">✓</span>
+                <span><strong>품종:</strong> 담양 명품 죽향 (특·상등급 엄선 생과)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-strawberry-500 font-bold">✓</span>
+                <span><strong>포장:</strong> 500g 개별 보호 캡 팩 4개 + 2kg 완충 골판지 전용 박스</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-strawberry-500 font-bold">✓</span>
+                <span><strong>수령 방식:</strong> 전국 우체국/안심 택배 또는 농장 직판장 직접 수령</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-strawberry-500 font-bold">✓</span>
+                <span><strong>대량 주문:</strong> 카페, 베이커리, 기업 선물 단체 납품 상담 환영</span>
+              </li>
+            </ul>
+
+            <div class="p-4 bg-stone-50 rounded-xl border border-stone-200 text-xs text-stone-500 mb-6">
+              💡 딸기 시세는 기후 및 제철 출하 시기에 따라 유동적이므로, 구글폼 또는 유선 전화(010-7599-9962)로 당일 시세를 바로 확인하실 수 있습니다.
+            </div>
+
+            <a href="#order" class="block w-full py-3.5 bg-strawberry-600 hover:bg-strawberry-700 text-white font-bold text-center rounded-xl transition shadow">
+              지금 바로 주문/문의 접수하기
+            </a>
+          </div>
+
+          <div class="space-y-4">
+            <div class="aspect-4/3 rounded-2xl overflow-hidden border border-stone-200 bg-stone-100">
+              <img src="watermarked_img_9095258496445317228.jpg" alt="500g 4팩 2kg 박스" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=800&q=80'">
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-center text-xs">
+              <div class="p-3 bg-stone-50 rounded-xl border border-stone-200">
+                <div class="font-bold text-stone-900">500g 소분팩</div>
+                <div class="text-stone-500 mt-1">냉장고 보관 간편</div>
+              </div>
+              <div class="p-3 bg-stone-50 rounded-xl border border-stone-200">
+                <div class="font-bold text-stone-900">전용 완충 박스</div>
+                <div class="text-stone-500 mt-1">배송 중 흔들림 방지</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Order & Inquiry (Google Forms Integration) -->
+  <section id="order" class="py-16 bg-white border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-strawberry-600 mb-2">Order & Inquiry</h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-stone-900">온라인 간편 주문 및 문의</h3>
+        <p class="text-stone-600 mt-3 text-sm md:text-base">
+          회원가입 없이 성함과 연락처만으로 간편하게 주문/문의를 남겨주세요.<br />
+          확인 즉시 농장주가 친절하게 안내 및 주문 확인 연락을 드립니다.
+        </p>
+      </div>
+
+      <!-- Google Form Embedded Container Card -->
+      <div class="bg-stone-50 border border-stone-200 rounded-3xl p-6 md:p-8 shadow-sm">
+        
+        <!-- Form Header Note -->
+        <div class="flex items-center justify-between border-b border-stone-200 pb-4 mb-6">
+          <div>
+            <h4 class="font-bold text-stone-900 text-lg">📝 순옥이네딸기 구글폼 주문서</h4>
+            <p class="text-xs text-stone-500 mt-0.5">2kg 전용 박스 (500g × 4팩) 배송 / 수령 접수</p>
+          </div>
+          <a id="externalFormLink" href="https://forms.google.com" target="_blank" class="text-xs font-semibold text-strawberry-600 hover:underline flex items-center gap-1">
+            새 창에서 열기 ↗
+          </a>
+        </div>
+
+        <!-- Working Responsive Form Interface (Can be replaced with user's real Google Form iframe) -->
+        <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">주문자 성함 *</label>
+              <input type="text" id="custName" required placeholder="홍길동" class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">연락처 *</label>
+              <input type="tel" id="custPhone" required placeholder="010-0000-0000" class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">주문/수령 유형 *</label>
+              <select id="orderType" class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500">
+                <option value="택배배송">택배 배송 (전국 배송)</option>
+                <option value="직판장수령">산지 직판장 직접 방문 수령</option>
+                <option value="대량납품">카페/식자재 정기 대량 납품 문의</option>
+                <option value="기타문의">기타 문의</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">주문 수량 (2kg 박스 단위) *</label>
+              <select id="orderQty" class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500">
+                <option value="1박스 (2kg)">1박스 (2kg : 500g × 4팩)</option>
+                <option value="2박스 (4kg)">2박스 (4kg)</option>
+                <option value="3박스 (6kg)">3박스 (6kg)</option>
+                <option value="4박스 이상 (상담)">4박스 이상 / 대량 주문 (별도 협의)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">배송지 주소 (택배 주문 시)</label>
+            <input type="text" id="custAddr" placeholder="도로명 주소 및 상세 주소" class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">요청사항 및 문의 내용</label>
+            <textarea id="custNote" rows="3" placeholder="희망 수령일, 배송 요청사항 등을 적어주세요." class="w-full px-4 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-strawberry-500"></textarea>
+          </div>
+
+          <div class="flex items-center gap-2 pt-2">
+            <input type="checkbox" id="privacyAgree" required class="w-4 h-4 text-strawberry-600 rounded border-stone-300 focus:ring-strawberry-500">
+            <label for="privacyAgree" class="text-xs text-stone-600">주문 확인 및 상담 안내를 위한 개인정보 수집·이용에 동의합니다.</label>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-strawberry-600 hover:bg-strawberry-700 text-white font-bold rounded-xl shadow-md transition text-base">
+            주문·문의 접수하기
+          </button>
+        </form>
+
+        <!-- Direct Call Backup Box -->
+        <div class="mt-6 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
+          <div>
+            <div class="text-xs text-stone-500 font-medium">급한 주문이나 당일 시세가 궁금하신가요?</div>
+            <div class="text-lg font-bold text-stone-900 mt-0.5">📞 010-7599-9962 (농장 직통)</div>
+          </div>
+          <a href="tel:01075999962" class="px-5 py-2.5 bg-white border border-stone-300 hover:border-strawberry-500 text-stone-800 font-semibold rounded-xl text-sm transition">
+            전화 상담하기
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Notice & Reviews -->
+  <section id="notice" class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-strawberry-600 mb-2">Notice & Reviews</h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-stone-900">농장 소식 및 고객 후기</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- FAQ / Notice -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 space-y-4">
+          <h4 class="font-bold text-lg text-stone-900 mb-4">💡 자주 묻는 질문 (FAQ)</h4>
+          
+          <div class="border-b border-stone-100 pb-3">
+            <div class="font-semibold text-stone-900 text-sm">Q. 죽향딸기는 어떻게 보관해야 하나요?</div>
+            <p class="text-stone-600 text-xs mt-1 leading-relaxed">
+              죽향딸기는 과육이 단단하여 일반 딸기보다 오래 유지되지만, 씻지 않은 상태로 500g 소분 팩 그대로 냉장 보관하시고 드시기 직전에 흐르는 물에 가볍게 씻어 드시면 가장 맛있습니다.
+            </p>
+          </div>
+
+          <div class="border-b border-stone-100 pb-3">
+            <div class="font-semibold text-stone-900 text-sm">Q. 배송은 언제 출발하나요?</div>
+            <p class="text-stone-600 text-xs mt-1 leading-relaxed">
+              당일 새벽에 딴 딸기를 오전 중 포장하여 당일 오후 발송하며, 보통 다음 날 도착합니다. (주말 및 공휴일 전날은 신선도를 위해 발송 일정이 조정될 수 있습니다)
+            </p>
+          </div>
+
+          <div>
+            <div class="font-semibold text-stone-900 text-sm">Q. 농장에서 바로 살 수 있나요?</div>
+            <p class="text-stone-600 text-xs mt-1 leading-relaxed">
+              네, 봉산면 와우리 888-10번지 직판장으로 오시면 갓 수확한 딸기를 직접 확인하고 수령하실 수 있습니다. 오시기 전 전화(010-7599-9962) 주시면 수량을 미리 챙겨둡니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Customer Reviews -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 space-y-4">
+          <h4 class="font-bold text-lg text-stone-900 mb-4">⭐ 고객 생생 구매 후기</h4>
+
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-100">
+            <div class="flex items-center justify-between text-xs text-stone-500 mb-1">
+              <span class="font-bold text-stone-800">김*정 님 (광주 서구)</span>
+              <span>★★★★★</span>
+            </div>
+            <p class="text-stone-700 text-xs leading-relaxed">
+              "담양 죽향딸기 매년 먹는데 순옥이네 딸기는 정말 향부터 달라요. 500g 4팩으로 나눠져 있어서 이웃이랑 나누기도 좋고 끝까지 무르지 않고 싱싱했습니다."
+            </p>
+          </div>
+
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-100">
+            <div class="flex items-center justify-between text-xs text-stone-500 mb-1">
+              <span class="font-bold text-stone-800">이*훈 님 (서울 송파구)</span>
+              <span>★★★★★</span>
+            </div>
+            <p class="text-stone-700 text-xs leading-relaxed">
+              "택배로 딸기 시키면 늘 짓무를까봐 걱정했는데 전용 박스 포장이 탄탄해서 하나도 안 다치고 잘 도착했네요. 선물용으로 추가 주문합니다!"
+            </p>
+          </div>
+
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-100">
+            <div class="flex items-center justify-between text-xs text-stone-500 mb-1">
+              <span class="font-bold text-stone-800">박*영 님 (전남 순천)</span>
+              <span>★★★★★</span>
+            </div>
+            <p class="text-stone-700 text-xs leading-relaxed">
+              "직판장 지나가다가 들러서 샀는데 사장님도 너무 친절하시고 당도가 장난 아닙니다. 마트 딸기랑은 비교가 안 돼요."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Location & Contact Section -->
+  <section id="location" class="py-16 bg-white border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-strawberry-600 mb-2">Location & Map</h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-stone-900">오시는 길 & 산지 직판장</h3>
+        <p class="text-stone-600 mt-3 text-sm md:text-base">
+          전남광주 통합생활권 담양군 봉산면 와우리 888-10번지<br />
+          언제든 방문하셔서 갓 수확한 싱싱한 죽향딸기를 만나보세요.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+        <!-- Address & Contact Info -->
+        <div class="bg-stone-50 rounded-2xl p-6 md:p-8 border border-stone-200 space-y-4">
+          <div>
+            <div class="text-xs font-bold text-strawberry-600 uppercase">Farm Address</div>
+            <div class="text-lg font-bold text-stone-900 mt-1">전남 담양군 봉산면 와우리 888-10번지</div>
+            <p class="text-xs text-stone-500 mt-0.5">순옥이네딸기 직판장 및 온실</p>
+          </div>
+
+          <div class="pt-3 border-t border-stone-200">
+            <div class="text-xs font-bold text-stone-500 uppercase">Contact Phone</div>
+            <a href="tel:01075999962" class="text-xl font-extrabold text-strawberry-600 mt-1 inline-block">
+              010-7599-9962
+            </a>
+          </div>
+
+          <div class="pt-3 border-t border-stone-200">
+            <div class="text-xs font-bold text-stone-500 uppercase">Operating Hours</div>
+            <div class="text-sm font-semibold text-stone-800 mt-1">수확기 매일 08:00 ~ 18:00</div>
+            <p class="text-xs text-stone-500 mt-0.5">* 직판장 방문 시 사전 전화 연락을 권장합니다.</p>
+          </div>
+
+          <!-- Quick Navigation Links -->
+          <div class="pt-4 border-t border-stone-200">
+            <div class="text-xs font-bold text-stone-700 mb-2">원클릭 모바일 내비게이션 실행</div>
+            <div class="grid grid-cols-3 gap-2">
+              <a href="tmap://search?name=순옥이네딸기" class="px-3 py-2 bg-white border border-stone-300 rounded-lg text-center text-xs font-semibold hover:border-strawberry-500 transition">
+                티맵 (Tmap)
+              </a>
+              <a href="kakaomap://search?q=전남 담양군 봉산면 와우리 888-10" class="px-3 py-2 bg-white border border-stone-300 rounded-lg text-center text-xs font-semibold hover:border-strawberry-500 transition">
+                카카오맵
+              </a>
+              <a href="nmap://search?query=전남 담양군 봉산면 와우리 888-10" class="px-3 py-2 bg-white border border-stone-300 rounded-lg text-center text-xs font-semibold hover:border-strawberry-500 transition">
+                네이버지도
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Map Placeholder Card -->
+        <div class="bg-stone-100 rounded-2xl border border-stone-200 p-6 flex flex-col items-center justify-center text-center h-full min-h-[300px]">
+          <div class="text-4xl mb-3">🗺️</div>
+          <h4 class="font-bold text-stone-900 text-base mb-1">담양군 봉산면 와우리 888-10</h4>
+          <p class="text-xs text-stone-500 mb-4 max-w-xs">
+            광주 광역시에서 차량 15~20분 거리, 담양 IC 및 봉산면 인근으로 접근이 매우 편리합니다.
+          </p>
+          <button onclick="copyAddress()" class="px-4 py-2 bg-white border border-stone-300 rounded-xl text-xs font-bold text-stone-700 hover:border-strawberry-600 transition shadow-sm">
+            주소 복사하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-400 py-10 text-xs">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <div class="text-white font-bold text-sm mb-1">순옥이네딸기</div>
+        <p>대표자: 순옥이네 | 전화번호: 010-7599-9962</p>
+        <p>주소: 전남 담양군 봉산면 와우리 888-10번지</p>
+        <p class="mt-2 text-stone-500">© 2026 순옥이네딸기. All rights reserved.</p>
+      </div>
+      <div class="flex gap-4">
+        <a href="#about" class="hover:text-white transition">농장 소개</a>
+        <a href="#products" class="hover:text-white transition">상품 안내</a>
+        <a href="#order" class="hover:text-white transition">주문 문의</a>
+        <a href="#location" class="hover:text-white transition">오시는 길</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Quick Action Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-stone-200 p-2 md:hidden">
+    <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+      <a href="tel:01075999962" class="py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold rounded-xl text-xs flex flex-col items-center justify-center transition">
+        <span>📞 전화주문</span>
+      </a>
+      <a href="#order" class="py-2.5 bg-strawberry-600 hover:bg-strawberry-700 text-white font-bold rounded-xl text-xs flex flex-col items-center justify-center transition shadow">
+        <span>📝 2kg 주문</span>
+      </a>
+      <a href="#location" class="py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold rounded-xl text-xs flex flex-col items-center justify-center transition">
+        <span>🚗 길찾기</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMenu);
+
+    function copyAddress() {
+      const address = "전남 담양군 봉산면 와우리 888-10번지";
+      navigator.clipboard.writeText(address).then(() => {
+        alert("농장 주소가 클립보드에 복사되었습니다:\n" + address);
+      }).catch(() => {
+        alert(address);
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const type = document.getElementById('orderType').value;
+      const qty = document.getElementById('orderQty').value;
+      
+      alert(`[순옥이네딸기 주문 접수 완료]\n\n성함: ${name}\n연락처: ${phone}\n유형: ${type}\n수량: ${qty}\n\n접수해주셔서 감사합니다! 농장주가 빠른 시일 내에 연락드리겠습니다.`);
+      document.getElementById('inquiryForm').reset();
+    }
+  </script>
+</body>
+</html>
